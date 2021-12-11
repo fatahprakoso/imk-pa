@@ -2,10 +2,14 @@
   background-color: #e8fff1;
 }
 
-.ph-nav-text-size {
-  font-size: 15px;
-}
-
 .ph-nav-text {
   color: black;
+}
+
+.ph-nav-text-size {
+  font-size: 13px;
+}
+
+.ph-nav-main-text {
+  font-weight: bolder;
 }
