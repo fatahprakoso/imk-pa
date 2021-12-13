@@ -1,0 +1,34 @@
+{
+  "name": "pasar_hijau",
+  "version": "1.0.0",
+  "description": "Pasar Hijau! adalah suatu website yang menghubungkan petani-petani Indonesia dengan konsumen dari segala kalangan.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx mix",
+    "watch": "npx mix watch",
+    "prod": "npx mix -p"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fatahprakoso/imk-pa.git"
+  },
+  "keywords": [
+    "e-commerce"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fatahprakoso/imk-pa/issues"
+  },
+  "homepage": "https://github.com/fatahprakoso/imk-pa#readme",
+  "devDependencies": {
+    "laravel-mix": "^6.0.39",
+    "resolve-url-loader": "^4.0.0",
+    "sass": "^1.45.0",
+    "sass-loader": "^12.4.0"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.0",
+    "bootstrap": "^5.1.3"
+  }
+}
