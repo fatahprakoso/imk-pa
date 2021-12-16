@@ -1,0 +1,8 @@
+.img-pembeli {
+    width: 300px;
+    clip-path: circle();
+}
+
+.set-min {
+    min-height: 500px;
+}
