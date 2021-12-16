@@ -4,8 +4,6 @@ const body = document.querySelector('body');
 let pages = {
     home: page !== 'home.html' ? './home.html' : '#',
     artikel: page !== 'artikel.html' ? './artikel.html' : '#',
-    detail_artikel: page !== 'detail_artikel.html' ? './detail_artikel.html' : '#',
-    detail_produk: page !== 'detail_produk.html' ? './detail_produk.html' : '#',
     tentang_perusahaan: page !== 'tentang_perusahaan.html' ? './tentang_perusahaan.html' : '#',
     belanja: page !== 'belanja.html' ? '#' : '#',
 }
