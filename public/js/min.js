@@ -3228,6 +3228,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (() => {
 
 var page = window.location.pathname.split("/").pop();
+var body = document.querySelector('body');
 var pages = {
   home: page !== 'home.html' ? './home.html' : '#',
   artikel: page !== 'artikel.html' ? './artikel.html' : '#',
@@ -3235,12 +3236,18 @@ var pages = {
   detail_produk: page !== 'detail_produk.html' ? './detail_produk.html' : '#',
   tentang_perusahaan: page !== 'tentang_perusahaan.html' ? './tentang_perusahaan.html' : '#',
   belanja: page !== 'belanja.html' ? '#' : '#'
-};
-console.log(page);
+}; // Navbar Generator
+
 var navbar = document.createElement('nav');
 navbar.classList.add('ph-nav-color', 'fixed-top');
 navbar.innerHTML = "\n    <div class=\"container-fluid mt-1 mb-1\">\n        <div class=\"row\">\n          <div class=\"col\">\n            <div class=\"d-flex align-items-center justify-content-center\">\n              <a class=\"navbar-brand ph-nav-main-text my-auto\" href=\"".concat(pages.home, "\"\n                >PasarHijau!</a\n              >\n            </div>\n          </div>\n          <div class=\"col-7\">\n            <div class=\"d-flex justify-content-between align-items-center\">\n              <a class=\"nav-link ph-nav-text-size\" href=\"").concat(pages.belanja, "\">Belanja</a>\n              <a class=\"nav-link ph-nav-text-size\" href=\"").concat(pages.artikel, "\"\n                >Artikel</a\n              >\n              <a class=\"nav-link ph-nav-text-size\" href=\"").concat(pages.tentang_perusahaan, "\"\n                >Tentang Perusahaan</a\n              >\n              <form class=\"d-flex mt-1 mb-1\">\n                <input\n                  class=\"form-control me-2\"\n                  type=\"search\"\n                  placeholder=\"Search\"\n                  aria-label=\"Search\"\n                />\n                <button class=\"btn btn-outline-success\" type=\"submit\">\n                  Search\n                </button>\n              </form>\n            </div>\n          </div>\n          <div class=\"col d-flex justify-content-center\">\n            <a\n              class=\"navbar-text text-center ph-nav-text-size my-auto\"\n              style=\"text-decoration: none\"\n              href=\"#\"\n              id=\"login-register\"\n              >Login/Register</a\n            >\n          </div>\n        </div>\n    </div>\n");
-document.querySelector('body').insertAdjacentElement('afterbegin', navbar);
+body.insertAdjacentElement('afterbegin', navbar); // Footer Generator
+
+var footer = document.createElement('footer');
+footer.classList.add('container');
+footer.style.marginTop = '275px';
+footer.innerHTML = "\n        <div class=\"row row-cols-5 py-5 border-top\">\n          <div class=\"col-6 d-flex flex-column justify-content-center\">\n            <a href=\"".concat(pages.home, "\" class=\"navbar-brand link-primary\">\n              <h1>PASAR HIJAU!</h1></a\n            >\n          </div>\n\n          <div class=\"col-2\">\n            <h5>Belanja</h5>\n            <ul class=\"nav flex-column\">\n              <li class=\"nav-item mb-2\">\n                <a href=\"#\" class=\"nav-link p-0 text-muted\">Buah Segar</a>\n              </li>\n              <li class=\"nav-item mb-2\">\n                <a href=\"#\" class=\"nav-link p-0 text-muted\">Sayur Segar</a>\n              </li>\n              <li class=\"nav-item mb-2\">\n                <a href=\"#\" class=\"nav-link p-0 text-muted\">Snack Buah</a>\n              </li>\n              <li class=\"nav-item mb-2\">\n                <a href=\"#\" class=\"nav-link p-0 text-muted\">Snack Sayur</a>\n              </li>\n              <li class=\"nav-item mb-2\">\n                <a href=\"#\" class=\"nav-link p-0 text-muted\">Paket Hadiah</a>\n              </li>\n              <li class=\"nav-item mb-2\">\n                <a href=\"#\" class=\"nav-link p-0 text-muted\">Buah Kering</a>\n              </li>\n            </ul>\n          </div>\n\n          <div class=\"col-2\">\n            <h5>Bantuan</h5>\n            <ul class=\"nav flex-column\">\n              <li class=\"nav-item mb-2\">\n                <a href=\"#\" class=\"nav-link p-0 text-muted\">Help Center</a>\n              </li>\n              <li class=\"nav-item mb-2\">\n                <a href=\"").concat(pages.tentang_perusahaan, "\" class=\"nav-link p-0 text-muted\">Contact Us</a>\n              </li>\n            </ul>\n          </div>\n\n          <div class=\"col-2\">\n            <h5>About</h5>\n            <ul class=\"nav flex-column\">\n              <li class=\"nav-item mb-2\">\n                <a href=\"").concat(pages.tentang_perusahaan, "\" class=\"nav-link p-0 text-muted\">About Us</a>\n              </li>\n              <li class=\"nav-item mb-2\">\n                <a href=\"").concat(pages.tentang_perusahaan, "\" class=\"nav-link p-0 text-muted\">Responsibility</a>\n              </li>\n              <li class=\"nav-item mb-2\">\n                <a href=\"").concat(pages.tentang_perusahaan, "\" class=\"nav-link p-0 text-muted\"\n                  >Technology & Innovation</a\n                >\n              </li>\n              <li class=\"nav-item mb-2\">\n                <a href=\"").concat(pages.tentang_perusahaan, "\" class=\"nav-link p-0 text-muted\"\n                  >Explore Our Stories</a\n                >\n              </li>\n            </ul>\n          </div>\n        </div>\n        <div class=\"row row-cols-2\">\n          <div class=\"col-10\">\n            <p style=\"color: #818181cb\">\n              \xA9 2021 PasarHijau All right reserved.\n            </p>\n          </div>\n          <div class=\"col-2\">\n            <img src=\"./../res/NAVBAR/medsos.png\" alt=\"...\" />\n          </div>\n        </div>\n");
+body.insertAdjacentElement('beforeend', footer);
 
 /***/ }),
 
