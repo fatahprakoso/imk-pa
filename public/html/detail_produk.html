@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./../css/min.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./../css/index.css" />
+    <link rel="stylesheet" href="./../css/navbar.css" />
+
+    <title>Produk</title>
+  </head>
+
+  <body>
+    <script src="./../js/min.js"></script>
+
+    <!-- NAVBAR -->
+    <nav class="ph-nav-color fixed-top">
+      <div class="container-fluid mt-1 mb-1">
+        <div class="row">
+          <div class="col">
+            <div class="d-flex align-items-center justify-content-center">
+              <a
+                class="navbar-brand ph-nav-main-text ph-nav-text my-auto"
+                href="#"
+                >PasarHijau!</a
+              >
+            </div>
+          </div>
+          <div class="col-7">
+            <div class="d-flex justify-content-between align-items-center">
+              <a class="nav-link ph-nav-text-size ph-nav-text" href="#"
+                >Belanja</a
+              >
+              <a class="nav-link ph-nav-text-size ph-nav-text" href="#"
+                >Artikel</a
+              >
+              <a class="nav-link ph-nav-text-size ph-nav-text" href="#"
+                >Tentang Perusahaan</a
+              >
+              <form class="d-flex mt-1 mb-1">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-success" type="submit">
+                  Search
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center">
+            <a
+              class="
+                navbar-text
+                text-center
+                ph-nav-text-size ph-nav-text
+                my-auto
+              "
+              style="text-decoration: none"
+              href="#"
+              id="login-register"
+              >Login/SignUp</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--  -->
+
+    <!-- Main -->
+    <main>
+      <div class="container my-custom">
+        <div class="row">
+          <div class="col-6">
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <h1 class="fw-bold">Apel Manalagi</h1>
+              </li>
+              <li class="list-inline-item">
+                <p>(200 kg stok tersedia)</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-6">
+            <p>Apel manis murah yang bisa kamu dapatkan !</p>
+          </div>
+        </div>
+
+        <!-- Bagian detail pesanan -->
+        <div class="row my-3">
+          <!-- detail pesanan -->
+          <div class="col-7">
+            <div class="border rounded">
+              <div class="row my-4 mx-2">
+                <!-- bagian detail harga beli -->
+                <div class="col-6 border py-3 mx-1">
+                    
+                </div>
+                <!-- end accordion -->
+
+                <div class="col-sm-6 border py-3 mx-1">
+                  <div class="row">
+                    <div class="col">
+                      <p class="text-start text-muted">Kategori</p>
+                    </div>
+                    <div class="col">
+                      <p class="text-end">Buah</p>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col">
+                      <p class="text-start text-muted">Stok</p>
+                    </div>
+                    <div class="col">
+                      <p class="text-end">2 ton</p>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col">
+                      <p class="text-start text-muted">Rating</p>
+                    </div>
+                    <div class="col">
+                      <p class="text-end">4 dari 5</p>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col">
+                      <p class="text-start text-muted">Terjual</p>
+                    </div>
+                    <div class="col">
+                      <p class="text-end">150 ton</p>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col">
+                      <p class="text-start text-muted">Jumlah Pembeli</p>
+                    </div>
+                    <div class="col">
+                      <p class="text-end">1.000 orang</p>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col">
+                      <p class="text-start text-muted">Penjual</p>
+                    </div>
+                    <div class="col">
+                      <p class="text-end">Pak Mamat</p>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col">
+                      <p class="text-start text-muted">Lokasi</p>
+                    </div>
+                    <div class="col">
+                      <p class="text-end">Kota Malang</p>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col text-center">
+                      <a href="#" class="btn btn-primary">Tambah Wishlist</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- akhir detail pesanan -->
+
+          <!-- gambar produk -->
+          <div class="col-5">
+            <div
+              id="carouselProduk"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselProduk"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselProduk"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselProduk"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="../res/DETAIL_PRODUK/image.jpg"
+                    class="d-block w-100"
+                    alt="Apel 1"
+                    style="width: 100%"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="../res/DETAIL_PRODUK/image 2.jpg"
+                    class="d-block w-100"
+                    alt="Apel 2"
+                    style="width: 100%"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="../res/DETAIL_PRODUK/image 3.jpg"
+                    class="d-block w-100"
+                    alt="Apel 3"
+                    style="width: 100%"
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselProduk"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselProduk"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- akhir bagian detail pesanan -->
+
+        <!-- start deskripsi produk -->
+        <section class="deskripsi-produk my-5">
+          <div class="container">
+            <div class="row">
+              <h2>Deskripsi Produk</h2>
+              <p>Apel manalagi berat 1kg</p>
+              <p>
+                Memiliki aroma yang wangi, buah ini merupakan jenis apel yang
+                cukup digemari. Berbicara tentang apel, memang beragam jenisnya,
+                tak terkecuali yang berasal dari Malang. Selain di kebunnya,
+                buah apel manalagi mempunyai warna kulit hijau kekuning kuningan
+                jika masak dan (siap dimakan). Kulit buahnya agak lembek, daging
+                buahnya keras, buah ini memiliki beberapa biji di dalamnya.
+                Ciri-ciri apel manalagi antara lain bentuk buah bulat dengan
+                ujung pangkal berlekuk datar,daging buah manis, tekstur dengan
+                sedikit kandungan air, rasa buah tentunya manis.
+              </p>
+              <p>
+                Buah ini mengandung Vitamin A, C, serat dan nutrisi lain yang
+                baik untuk tubuh. Selain membuat tubuh lebih sehat, apel
+                manalagi juga dapat membantu tubuh melawan berbagai macam
+                penyakit.
+              </p>
+              <p>Berikut manfaat dari apel manalagi, antara lain:</p>
+              <ul>
+                <li>Meningkatkan kecerdasan otak</li>
+                <li>Menguatkan tulang</li>
+                <li>Membuat mata lebih sehat</li>
+                <li>mencegah pertumbuhan sel kanker</li>
+                <li>menyehatkan jantung</li>
+                <li>menguatkan gigi</li>
+                <li>mengatasi kepikunan</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <!-- end deskripsi produk -->
+
+        <!-- Bagian komentar -->
+        <section class="bagian-komentar">
+          <div class="container">
+            <div class="row">
+              <h2>Komentar</h2>
+              <div class="container px-5 py-2">
+                <div class="row my-2">
+                    <div class="col-1">
+                        <img src="../res/DETAIL_PRODUK/fi_user.png" alt="user">
+                    </div>
+                    <div class="col-11 rounded border text-start">
+                        <p>Komentar</p>
+                    </div>
+                </div>
+
+                <div class="row my-2">
+                    <div class="col-1">
+                        <img src="../res/DETAIL_PRODUK/fi_user.png" alt="user">
+                    </div>
+                    <div class="col-11 rounded border text-start">
+                        <p>Komentar</p>
+                    </div>
+                </div>
+
+                <div class="row my-2">
+                    <div class="col-1">
+                        <img src="../res/DETAIL_PRODUK/fi_user.png" alt="user">
+                    </div>
+                    <div class="col-11 rounded border text-start">
+                        <p>Komentar</p>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- bagian komentar -->
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="container" style="margin-top: 275px">
+      <div class="row row-cols-5 py-5 border-top">
+        <div class="col-6 d-flex flex-column justify-content-center">
+          <a href="#" class="navbar-brand ph-nav-text"><h1>PASAR HIJAU!</h1></a>
+        </div>
+
+        <div class="col-2">
+          <h5>Belanja</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Home</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Features</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Pricing</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">FAQs</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">About</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-2">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Home</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Features</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Pricing</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">FAQs</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">About</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-2">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Home</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Features</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Pricing</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">FAQs</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row row-cols-2">
+        <div class="col-10">
+          <p style="color: #818181cb">© 2021 PasarHijau All right reserved.</p>
+        </div>
+        <div class="col-2">
+          <img src="./../res/NAVBAR/medsos.png" alt="..." />
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

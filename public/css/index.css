@@ -23,3 +23,7 @@ h5 {
 .btn-prim-col:hover .btn-prim-col:focus .btn-prim-col:active {
   background-color: #009e8e;
 }
+
+.my-custom {
+  margin-top: 100px;
+}
