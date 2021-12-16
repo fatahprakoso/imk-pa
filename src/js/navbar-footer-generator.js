@@ -1,3 +1,1 @@
-var path = window.location.pathname;
-var page = path.split("/").pop();
-console.log(page);
+let page = window.location.pathname.split("/").pop();
