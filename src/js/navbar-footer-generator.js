@@ -2,10 +2,10 @@ let page = window.location.pathname.split("/").pop();
 const body = document.querySelector('body');
 
 let pages = {
-    home: page !== 'home.html' ? './home.html' : '#',
-    artikel: page !== 'artikel.html' ? './artikel.html' : '#',
-    tentang_perusahaan: page !== 'tentang_perusahaan.html' ? './tentang_perusahaan.html' : '#',
-    belanja: page !== 'belanja.html' ? '#' : '#',
+  home: page !== 'home.html' ? './home.html' : '#',
+  artikel: page !== 'artikel.html' ? './artikel.html' : '#',
+  tentang_perusahaan: page !== 'tentang_perusahaan.html' ? './tentang_perusahaan.html' : '#',
+  belanja: page !== 'belanja.html' ? './belanja.html' : '#',
 }
 
 // Navbar Generator
@@ -75,22 +75,22 @@ footer.innerHTML = `
             <h5>Belanja</h5>
             <ul class="nav flex-column">
               <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-muted">Buah Segar</a>
+                <a href="${pages.belanja}" class="nav-link p-0 text-muted">Buah Segar</a>
               </li>
               <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-muted">Sayur Segar</a>
+                <a href="${pages.belanja}" class="nav-link p-0 text-muted">Sayur Segar</a>
               </li>
               <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-muted">Snack Buah</a>
+                <a href="${pages.belanja}" class="nav-link p-0 text-muted">Snack Buah</a>
               </li>
               <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-muted">Snack Sayur</a>
+                <a href="${pages.belanja}" class="nav-link p-0 text-muted">Snack Sayur</a>
               </li>
               <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-muted">Paket Hadiah</a>
+                <a href="${pages.belanja}" class="nav-link p-0 text-muted">Paket Hadiah</a>
               </li>
               <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-muted">Buah Kering</a>
+                <a href="${pages.belanja}" class="nav-link p-0 text-muted">Buah Kering</a>
               </li>
             </ul>
           </div>
