@@ -4,10 +4,10 @@ const log_in_up = document.getElementById('login-register');
 let modalWrap = null;
 
 log_in_up.addEventListener('click', () => {
-    if (modalWrap) modalWrap.remove();
+  if (modalWrap) modalWrap.remove();
 
-    modalWrap = document.createElement('div');
-    modalWrap.innerHTML = `
+  modalWrap = document.createElement('div');
+  modalWrap.innerHTML = `
     <div
       class="modal fade"
       id="signInUpModal"
@@ -52,9 +52,9 @@ log_in_up.addEventListener('click', () => {
                   </div>
                   <div class="row mt-4 align-items-center">
                     <div class="col-3">
-                      <button type="button" class="btn btn-primary">
+                      <a href="./profil_pembeli.html" class="btn btn-primary">
                         Log-In
-                      </button>
+                      </a>
                     </div>
                     <div class="col">
                       <div class="form-check">
@@ -95,9 +95,9 @@ log_in_up.addEventListener('click', () => {
                   </div>
                   <div class="row mt-4">
                     <div class="col">
-                      <button type="button" class="btn btn-primary">
+                      <a href="./profil_pembeli.html" class="btn btn-primary">
                         Register
-                      </button>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -109,8 +109,8 @@ log_in_up.addEventListener('click', () => {
     </div>
     `;
 
-    document.body.append(modalWrap);
+  document.body.append(modalWrap);
 
-    const modal = new Modal(modalWrap.querySelector('.modal'));
-    modal.show();
+  const modal = new Modal(modalWrap.querySelector('.modal'));
+  modal.show();
 })
