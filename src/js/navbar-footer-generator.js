@@ -67,7 +67,7 @@ footer.innerHTML = `
         <div class="row row-cols-5 py-5 border-top">
           <div class="col-6 d-flex flex-column justify-content-center">
             <a href="${pages.home}" class="navbar-brand link-primary">
-              <h1>PASAR HIJAU!</h1></a
+              <h1>PasarHijau!</h1></a
             >
           </div>
 
